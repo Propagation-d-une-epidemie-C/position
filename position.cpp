@@ -15,6 +15,10 @@ position::position() : N(30), taille  (50)
 position::position(std::vector<int> new_x, std::vector<int> new_y):
   N (30), taille (50), x (new_x), y (new_y) {}
 
+void position::initialise(unsigned int N_, unsigned int taille_){
+  N = N_;
+  taille = taille_;
+}
 
 int position::get_x(unsigned int i_) const{
   return x[i_];
