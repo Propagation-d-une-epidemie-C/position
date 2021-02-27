@@ -20,6 +20,14 @@ void position::initialise(unsigned int N_, unsigned int taille_){
   taille = taille_;
 }
 
+int position::get_N() const{
+  return N;
+}
+
+int position::get_taille() const{
+  return taille;
+}
+
 int position::get_x(unsigned int i_) const{
   return x[i_];
 }
