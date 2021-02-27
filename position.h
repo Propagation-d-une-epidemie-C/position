@@ -22,6 +22,10 @@ class position {
     //si l'utilisateur veut changer N et taille
     void initialise(unsigned int N_, unsigned int taille_) const;
   
+    //obtenir N et taille
+    int get_N() const;
+    int get_taille() const;
+  
     // obtenir x et y
     int get_x(unsigned int i_) const;
     int get_y(unsigned int i_) const;
