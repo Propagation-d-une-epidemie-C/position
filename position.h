@@ -20,7 +20,7 @@ class position {
     position(std::vector<int>  new_x, std::vector<int>  new_y);
   
     //si l'utilisateur veut changer N et taille
-    void initialise(unsigned int N, unsigned int taille) const;
+    void initialise(unsigned int N_, unsigned int taille_) const;
   
     // obtenir x et y
     int get_x(unsigned int i_) const;
