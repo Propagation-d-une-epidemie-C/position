@@ -36,6 +36,14 @@ int position::get_y(unsigned int i_) const{
   return y[i_];
 }
 
+std::vector<int> position::getx() const{
+  return x;
+}
+
+std::vector<int> position::gety() const{
+  return y;
+}
+
 void position::affiche() const{
   std::cout << "tableau x :" << std::endl;
   for(unsigned int i = 0; i < N; i++)
@@ -53,7 +61,7 @@ void position::affiche(const unsigned int i_) const{
   std::cout << "x = " << x[i_] << " & " << "y = " << y[i_] << std::endl;
 }
 
-int position::compare(const position & p_, unsigned int i_,double r_) const{
+/*int position::compare(const position & p_, unsigned int i_,double r_) const{
   int compteur;
   for(unsigned int j = 0; j < N; j++){
     std::cout << j << std::endl;
@@ -63,4 +71,4 @@ int position::compare(const position & p_, unsigned int i_,double r_) const{
     else 
       return false;
   }
-}
+}*/
